@@ -4,7 +4,7 @@ include("conexao.php");
 $conn = conexao();
 
 if(empty($_POST['email'])|| empty($_POST['matricula'])){
-    header("location: index.php");
+    header("location: index.html");
     exit();
 }
 
@@ -23,7 +23,7 @@ if($count == 1){
    header("location:painel.php");
 } else{
     echo '<script>
-        window.location.href = "index.php";
+        window.location.href = "index.html";
         alert("falha no login")
     </script>';
     
