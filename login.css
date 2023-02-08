@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+body{
+    background-image: url("fundo_login.jpg");
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    font-size: 1.5em;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.600);
+    font-weight: bold;
+    transition: all 1s;
+}
+.login:hover{
+    transform: translateX(10px);
+}
+.login{
+    transition: all 1s;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    place-items: center;
+    gap: 12px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+input[type="email"],input[type="number"]{
+    border: none;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    height: 20px;
+    text-align: center;
+    background-color: transparent;
+}
+input[type="submit"]{
+    margin-top: 5px;
+    background-color: transparent;
+    padding: 5px;
+    width: 70px;
+}
